@@ -157,9 +157,10 @@ elif seccion == "Metricas del modelo":
         st.divider()
         st.subheader("Interpretacion")
         st.markdown(
-            f"- **R2 = {m['R2']:.2%}** : el modelo explica el {m['R2']:.0%} de la variabilidad del precio.\n"
-            f"- **MAE = ${m['MAE']:,.0f}** : en promedio el precio predicho se aleja +/-${m['MAE']:,.0f} del real.\n"
-            f"- **RMSE = ${m['RMSE']:,.0f}** : similar al MAE pero penaliza mas los errores grandes."
+          f"- **R2 = {m['R2']:.2%}** : el modelo explica el {m['R2']:.0%} de la variabilidad del precio.\n"
+          f"- **MAE = \\${m['MAE']:,.0f}** : en promedio el precio predicho se aleja +/-\\${m['MAE']:,.0f} del real.\n"
+          f"- **RMSE = \\${m['RMSE']:,.0f}** : similar al MAE pero penaliza mas los errores grandes."
         )
         st.subheader("Parametros de entrenamiento")
         st.json(m.get("parametros", {}))
+                                                                                                                                                                              
